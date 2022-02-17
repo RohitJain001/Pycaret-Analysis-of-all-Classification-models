@@ -1,0 +1,15 @@
+Model,Accuracy without Feature Selection,Accuracy Classic 0.2,Accuracy Classic 0.5,Accuracy Boruta 0.2,Accuracy Boruta 0.5
+Extra Trees Classifier,0.7382,0.6998,0.739,0.7331,0.7223
+Random Forest Classifier,0.7342,0.699,0.7327,0.7287,0.7124
+Gradient Boosting Classifier,0.733,0.7275,0.7307,0.7244,0.7219
+Light Gradient Boosting Machine,0.7295,0.7069,0.7168,0.7153,0.7089
+Ada Boost Classifier,0.7247,0.7335,0.7291,0.7236,0.7243
+Naive Bayes,0.7101,0.714,0.7117,0.6875,0.6919
+Decision Tree Classifier,0.653,0.6495,0.6531,0.6424,0.6289
+Quadratic Discriminant Analysis,0.6487,0.7093,0.7038,0.5937,0.5861
+K Neighbors Classifier,0.6368,0.6669,0.6467,0.623,0.6317
+Linear Discriminant Analysis,0.5833,0.5612,0.5557,0.577,0.5747
+Ridge Classifier,0.5766,0.5612,0.5553,0.5782,0.5719
+Logistic Regression,0.5675,0.5553,0.5572,0.5715,0.5545
+Dummy Classifier,0.5046,0.5113,0.5038,0.5018,0.5085
+SVM - Linear Kernel,0.4986,0.4978,0.5006,0.5046,0.5006

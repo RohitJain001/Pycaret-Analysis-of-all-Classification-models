@@ -1,0 +1,15 @@
+Model,Accuracy without Outlier Removal,Accuracy Threshold 0.02,Accuracy Threshold 0.04,Accuracy Threshold 0.06,Accuracy Threshold 0.08
+Extra Trees Classifier,0.7382,0.7405,0.7265,0.721,0.7245
+Random Forest Classifier,0.7342,0.7316,0.7223,0.7189,0.7202
+Gradient Boosting Classifier,0.733,0.7365,0.7224,0.7198,0.7137
+Light Gradient Boosting Machine,0.7295,0.7203,0.71,0.7054,0.7013
+Ada Boost Classifier,0.7247,0.7284,0.7158,0.7168,0.703
+Naive Bayes,0.7101,0.711,0.6993,0.6991,0.6956
+Decision Tree Classifier,0.653,0.6334,0.6262,0.6515,0.6289
+Quadratic Discriminant Analysis,0.6487,0.6948,0.6935,0.6856,0.6896
+K Neighbors Classifier,0.6368,0.6322,0.6332,0.635,0.6203
+Linear Discriminant Analysis,0.5833,0.5921,0.5882,0.6001,0.6328
+Ridge Classifier,0.5766,0.5618,0.5532,0.5828,0.5893
+Logistic Regression,0.5675,0.5659,0.5569,0.5823,0.5816
+Dummy Classifier,0.5046,0.5004,0.5128,0.5099,0.5105
+SVM - Linear Kernel,0.4986,0.5024,0.5062,0.4947,0.492

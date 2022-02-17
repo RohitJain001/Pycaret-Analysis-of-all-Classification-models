@@ -1,0 +1,15 @@
+Model,Accuracy without PCA,Accuracy linear,Accuracy kernel,Accuracyincremental
+Extra Trees Classifier,0.7382,0.6238,0.566,0.7093
+Random Forest Classifier,0.7342,0.6301,0.5406,0.7069
+Gradient Boosting Classifier,0.733,0.6765,0.5347,0.7018
+Light Gradient Boosting Machine,0.7295,0.6566,0.5434,0.695
+Ada Boost Classifier,0.7247,0.6737,0.5335,0.6681
+Naive Bayes,0.7101,0.6745,0.5081,0.6744
+Decision Tree Classifier,0.653,0.6083,0.5295,0.6329
+Quadratic Discriminant Analysis,0.6487,0.6753,0.5058,0.6986
+K Neighbors Classifier,0.6368,0.6269,0.5398,0.6333
+Linear Discriminant Analysis,0.5833,0.5707,0.5077,0.5675
+Ridge Classifier,0.5766,0.5707,0.5081,0.5675
+Logistic Regression,0.5675,0.5652,0.5085,0.5699
+Dummy Classifier,0.5046,0.5049,0.5061,0.5014
+SVM - Linear Kernel,0.4986,0.4986,0.503,0.51

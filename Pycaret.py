@@ -1,6 +1,5 @@
 import pandas as pd
 import sys
-import os
 
 path = sys.argv[1]
 
@@ -44,7 +43,7 @@ five
 df1 = pd.concat([one, two, three, four, five], axis=1)
 df1.columns = ['Model', 'Accuracy without Normalization', 'Accuracy z-score', 'Accuracy minmax', 'Accuracy Maxabs', 'Accuracy Robust']
 df1.head()
-df1.to_csv('output-101903706-Normalization.csv', index=False)
+df1.to_csv('output-Normalization.csv', index=False)
 
 setup(data=data, target='Target', feature_selection = True, feature_selection_method = 'classic', feature_selection_threshold = 0.2, silent=True)
 cm = compare_models()
@@ -70,7 +69,7 @@ five2 = five2.iloc[:, 1]
 df2 = pd.concat([one2, two2, three2, four2, five2], axis=1)
 df2.columns = ['Model', 'Accuracy without Feature Selection', 'Accuracy Classic 0.2', 'Accuracy Classic 0.5', 'Accuracy Boruta 0.2', 'Accuracy Boruta 0.5']
 df2.head()
-df2.to_csv('output-101903706-FeatureSelection.csv', index=False)
+df2.to_csv('output-FeatureSelection.csv', index=False)
 
 
 setup(data=data, target='Target', remove_outliers = True, outliers_threshold = 0.02, silent=True)
@@ -93,7 +92,7 @@ five3 = five3.iloc[:, 1]
 df3 = pd.concat([one, two3, three3, four3, five3], axis=1)
 df3.columns = ['Model', 'Accuracy without Outlier Removal', 'Accuracy Threshold 0.02', 'Accuracy Threshold 0.04', 'Accuracy Threshold 0.06', 'Accuracy Threshold 0.08']
 df3.head()
-df3.to_csv('output-101903706-OutlierRemoval.csv', index=False)
+df3.to_csv('output-OutlierRemoval.csv', index=False)
 
 
 setup(data=data, target='Target', pca = True, pca_method = 'linear', silent=True)
@@ -112,17 +111,12 @@ four4 = four4.iloc[:, 1]
 df4 = pd.concat([one, two4, three4, four4], axis=1)
 df4.columns = ['Model', 'Accuracy without PCA', 'Accuracy linear', 'Accuracy kernel', 'Accuracyincremental']
 df4.head()
-df4.to_csv('output-101903706-PCA.csv', index=False)
+df4.to_csv('output-PCA.csv', index=False)
 
 setup(data=data, target='Target', silent=True)
 rfModel = create_model('rf')
 plot_model(rfModel, plot='confusion_matrix', save=True)
-os.rename('Confusion Matrix.png', 'output_101903706_confusion_matrix.png')
 plot_model(rfModel, plot='learning', save=True)
-os.rename('Learning Curve.png', 'output_101903706_learning.png')
 plot_model(rfModel, plot='auc', save=True)
-os.rename('AUC.png', 'output_101903706_auc.png')
 plot_model(rfModel, plot='boundary', save=True)
-os.rename('Decision Boundary.png', 'output_101903706_boundary.png')
 plot_model(rfModel, plot='feature', save=True)
-os.rename('Feature Importance.png', 'output_101903706_featur.png')

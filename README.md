@@ -1,4 +1,4 @@
-# Pycaret-AnalysisPycaret-Analysis-of-all-Classification-models
+# Pycaret-Analysis-with-all-Classification-models
 
 With PyCaret, we spend less time coding and more time on analysis of our Dataset.
 We can do analysis of any Dataset, Regression or Classification with 3 lines of Code.

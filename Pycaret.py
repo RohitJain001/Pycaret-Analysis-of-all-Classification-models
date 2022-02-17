@@ -46,10 +46,6 @@ df1.head()
 df1.to_csv('output-Normalization.csv', index=False)
 
 setup(data=data, target='Target', feature_selection = True, feature_selection_method = 'classic', feature_selection_threshold = 0.2, silent=True)
-cm = compare_models()
-one2 = pull(cm)
-one2 = one2.iloc[:, 1]
-setup(data=data, target='Target', feature_selection = True, feature_selection_method = 'classic', feature_selection_threshold = 0.2, silent=True)
 cm1 = compare_models()
 two2 = pull(cm1)
 two2 = two2.iloc[:, 1]
@@ -66,7 +62,7 @@ cm4 = compare_models()
 five2 = pull(cm4)
 five2 = five2.iloc[:, 1]
 
-df2 = pd.concat([one2, two2, three2, four2, five2], axis=1)
+df2 = pd.concat([one, two2, three2, four2, five2], axis=1)
 df2.columns = ['Model', 'Accuracy without Feature Selection', 'Accuracy Classic 0.2', 'Accuracy Classic 0.5', 'Accuracy Boruta 0.2', 'Accuracy Boruta 0.5']
 df2.head()
 df2.to_csv('output-FeatureSelection.csv', index=False)
